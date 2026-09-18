@@ -5,11 +5,10 @@
 .top,
 .first,
 .second .cards,
-.third {
+.fourth {
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .top .logo h3,
@@ -67,7 +66,7 @@ li a {
     padding: 150px;
 }
 
-.sign {
+.about .sign {
     background-color: #3882F6;
     width: max-content;
     border-radius: 8px;
@@ -85,35 +84,106 @@ li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 100px;
 }
 
 .second .header h2 {
     color: black;
     margin: 48px;
 }
+.cards {
+    justify-content: center;
+}
+
+.card {
+    width: 15vw;
+    height: auto;
+    box-sizing: border-box;
+    padding: 32px;
+}
 
 .card img {
-    width: 15vw;
-    height: 20vh;
-    border: 5px solid #3882F6;;
+    display: block;
+    width: 100%;
+    border: 3px solid #3882F6;;
     border-radius: 8px;
 }
 
-.second .cards {
-    gap: 8px;
+
+.second .cards{
+    gap: 10px;
     align-items: center;
     justify-content: center;
 }
 
-.third.header h4 {
+.card .info {
+    text-align: center;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 100px;
+
+}
+
+.third .header {
     font-size: 36px;
     color:#1F2937;
     font-weight: 300;
     font-style: italic;
 }
+.third .author {
+    text-align: right;
+}
 
 
+
+.fourth {
+    padding: 100px;
+}
 .cta {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882F6;
+    width: 70vw;
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 8px;
+}
+
+.sign {
+    border: 3px solid #F9FAF8;
+    border-radius: 3px;
+    padding-inline: 30px;
     background-color: #3882F6;
 }
+
+.text .header,
+.text .texts,
+.fourth .sign,
+.footer p
+{
+    color:#F9FAF8;
+    margin: 0px;
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+    background-color: #1F2937;
+    justify-content: center;
+}
+
+
 
